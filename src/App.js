@@ -9,7 +9,7 @@ import clouds from './assets/clouds.json';
 
 const api = {
 	key: '2bfeaabdca00f9f2e594409eff15fb98',
-	base: 'http://api.openweathermap.org/data/2.5/',
+	base: 'https://api.openweathermap.org/data/2.5/',
 };
 
 function App() {
