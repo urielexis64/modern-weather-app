@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/modern-weather-app/static/css/main.d85799cc.chunk.css",
-    "main.js": "/modern-weather-app/static/js/main.f45f9d89.chunk.js",
-    "main.js.map": "/modern-weather-app/static/js/main.f45f9d89.chunk.js.map",
+    "main.js": "/modern-weather-app/static/js/main.e3d59b70.chunk.js",
+    "main.js.map": "/modern-weather-app/static/js/main.e3d59b70.chunk.js.map",
     "runtime-main.js": "/modern-weather-app/static/js/runtime-main.f3988624.js",
     "runtime-main.js.map": "/modern-weather-app/static/js/runtime-main.f3988624.js.map",
     "static/js/2.d2bc4c21.chunk.js": "/modern-weather-app/static/js/2.d2bc4c21.chunk.js",
     "static/js/2.d2bc4c21.chunk.js.map": "/modern-weather-app/static/js/2.d2bc4c21.chunk.js.map",
     "index.html": "/modern-weather-app/index.html",
-    "precache-manifest.191f2433c059c33f5b4fd03c8e383532.js": "/modern-weather-app/precache-manifest.191f2433c059c33f5b4fd03c8e383532.js",
+    "precache-manifest.e91a6b6f034e3c10a81d624d9f652c43.js": "/modern-weather-app/precache-manifest.e91a6b6f034e3c10a81d624d9f652c43.js",
     "service-worker.js": "/modern-weather-app/service-worker.js",
     "static/css/main.d85799cc.chunk.css.map": "/modern-weather-app/static/css/main.d85799cc.chunk.css.map",
     "static/js/2.d2bc4c21.chunk.js.LICENSE.txt": "/modern-weather-app/static/js/2.d2bc4c21.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.f3988624.js",
     "static/js/2.d2bc4c21.chunk.js",
     "static/css/main.d85799cc.chunk.css",
-    "static/js/main.f45f9d89.chunk.js"
+    "static/js/main.e3d59b70.chunk.js"
   ]
 }

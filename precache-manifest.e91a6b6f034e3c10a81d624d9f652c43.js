@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "871a52c6029475cf9b6291d3579950d4",
+    "revision": "eecebc76414dfc0ee54502adfbc9c697",
     "url": "/modern-weather-app/index.html"
   },
   {
-    "revision": "1f7b091f7b07ae98d84c",
+    "revision": "9d12ab5adb7c3dab5946",
     "url": "/modern-weather-app/static/css/main.d85799cc.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/modern-weather-app/static/js/2.d2bc4c21.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1f7b091f7b07ae98d84c",
-    "url": "/modern-weather-app/static/js/main.f45f9d89.chunk.js"
+    "revision": "9d12ab5adb7c3dab5946",
+    "url": "/modern-weather-app/static/js/main.e3d59b70.chunk.js"
   },
   {
     "revision": "4855a2664f59cc5c9bd5",
