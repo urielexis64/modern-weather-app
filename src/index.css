@@ -1,3 +1,5 @@
+@import url('./_config.css');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -9,9 +11,8 @@ body {
 }
 
 .app {
-	background-image: url('./assets/cold-bg.jpg');
 	background-size: cover;
-	background-position: bottom;
+	background-position: top;
 	transition: all 0.4s ease-out;
 }
 
@@ -19,9 +20,13 @@ body {
 	background-image: url('./assets/warm-bg.jpg');
 }
 
+.app.cold {
+	background-image: url('./assets/cold-bg.jpg');
+}
+
 main {
 	min-height: 100vh;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
 	padding: 25px;
 }
 
@@ -100,4 +105,41 @@ main {
 	font-size: 48px;
 	font-weight: 700;
 	text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+h1.not-found {
+	text-align: center;
+
+	font-size: 50px;
+	font-weight: 700;
+
+	color: white;
+	text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+	text-align: center;
+	padding: 1rem;
+	background: rgba(0, 0, 0, 0.9);
+	color: white;
+	height: 50px;
+}
+
+@media screen and (min-width: 392px) {
+	.app.cold {
+		background-image: url('./assets/cold-bg-xl.jpg');
+	}
+	.app.warm {
+		background-image: url('./assets/warm-bg-xl.jpg');
+	}
+
+	.search-box .search-bar {
+		width: 50%;
+		margin: auto;
+		margin-top: -25px;
+	}
+
+	h1.not-found {
+		font-size: 100px;
+	}
 }

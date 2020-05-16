@@ -1,4 +1,12 @@
 import React, {useState} from 'react';
+import Lottie from 'react-lottie';
+
+import snowfall from './assets/snowfall.json';
+import sunny from './assets/sunny.json';
+import mist from './assets/mist.json';
+import rain from './assets/rain.json';
+import clouds from './assets/clouds.json';
+
 const api = {
 	key: '2bfeaabdca00f9f2e594409eff15fb98',
 	base: 'http://api.openweathermap.org/data/2.5/',
@@ -44,10 +52,32 @@ function App() {
 		return `${day} ${date} ${month} ${year}`;
 	};
 
+	const snowOptions = {
+		animationData: snowfall,
+	};
+	const sunnyOptions = {
+		animationData: sunny,
+	};
+	const mistOptions = {
+		animationData: mist,
+	};
+	const rainOptions = {
+		animationData: rain,
+	};
+	const cloudsOptions = {
+		animationData: clouds,
+	};
+
+	let weatherDesc = typeof weather.main != 'undefined' ? weather.weather[0].main : '';
+
 	return (
 		<div
 			className={
-				typeof weather.main != 'undefined' ? (weather.main.temp > 20 ? 'app warm' : 'app') : 'app'
+				typeof weather.main != 'undefined'
+					? weather.main.temp > 20
+						? 'app warm'
+						: 'app cold'
+					: 'app'
 			}
 		>
 			<main>
@@ -61,6 +91,7 @@ function App() {
 						onKeyPress={search}
 					/>
 				</div>
+
 				{typeof weather.main != 'undefined' ? (
 					<div>
 						<div className="location-box">
@@ -73,9 +104,26 @@ function App() {
 							<div className="temp">{Math.round(weather.main.temp)}°C</div>
 							<div className="weather">{weather.weather[0].main}</div>
 						</div>
+
+						<Lottie
+							options={
+								weatherDesc === 'Clear'
+									? sunnyOptions
+									: weatherDesc === 'Snow'
+									? snowOptions
+									: weatherDesc === 'Mist'
+									? mistOptions
+									: weatherDesc === 'Clouds'
+									? cloudsOptions
+									: weatherDesc === 'Rain'
+									? rainOptions
+									: ''
+							}
+							style={{visibility: window.innerWidth < 392 ? 'visible' : 'hidden'}}
+						/>
 					</div>
 				) : (
-					''
+					<h1 className="not-found">City not found</h1>
 				)}
 			</main>
 		</div>
